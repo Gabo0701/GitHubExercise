@@ -1,0 +1,28 @@
+# GitHubExercise
+Git workflow
+
+# **GitHub Exercise**
+
+# 1. Create a Local Repository and Add/Commit Files
+mkdir GitHubExercise
+cd GitHubExercise
+git init
+echo "This is my first GitHub exercise." > file1.txt
+git add file1.txt
+git commit -m "Initial commit with file1.txt"
+
+# 2. Create a Remote Repository and Push Local Repo to Remote
+# (Replace <remote-repo-URL> with your actual GitHub repository URL)
+git remote add origin https://github.com/Gabo0701/GitHubExercise.git
+git branch -M main
+git push -u origin main
+
+# 3. Create a Local Branch and Add/Commit Files
+git branch feature-branch
+git checkout feature-branch
+echo "This is a feature file for the GitHub exercise." > feature.txt
+git add feature.txt
+git commit -m "Add feature.txt to feature-branch"
+
+# 4. Push the Local Branch to GitHub (Create a Remote Branch)
+git push -u origin feature-branch

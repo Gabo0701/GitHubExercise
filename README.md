@@ -1,2 +1,0 @@
-# GitHubExercise
-Git workflow
